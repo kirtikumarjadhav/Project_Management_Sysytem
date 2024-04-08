@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.search-container,
+.sort-container {
+    margin-bottom: 10px;
+}
+
+#projectTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#projectTable th,
+#projectTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.pagination-container {
+    margin-top: 10px;
+}

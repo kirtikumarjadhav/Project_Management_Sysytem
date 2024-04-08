@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project List</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Reason</th>
+                <th>Type</th>
+                <th>Division</th>
+                <th>Catagory</th>
+                <th>Priority</th>
+                <th>Department</th>
+                <th>Location</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Status</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for project in projects %}
+                <tr>
+                    <td>{{ project.project_name }}</td>
+                    <td>{{ project.reason }}</td>
+                    <td>{{ project.type }}</td>
+                    <td>{{ project.division }}</td>
+                    <td>{{ project.category }}</td>
+                    <td>{{ project.priority}}</td>
+                    <td>{{ project.department }}</td>  
+                    <td>{{ project.location }}</td>  
+                    <td>{{ project.start_date }}</td>
+                    <td>{{ project.end_date }}</td>
+                    <td>{{ project.status }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
