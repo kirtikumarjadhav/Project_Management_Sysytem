@@ -7,6 +7,9 @@ from .models import Project
 def home(request):
  return render(request, "home.html", {})
 
+def login(request):
+   return render(request, "registration/login.html")
+
 
 def authView(request):
  if request.method == "POST":

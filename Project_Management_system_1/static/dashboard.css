@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef1f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#counter-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.counter {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 18%; /* You might need to adjust this depending on your layout */
+    margin-bottom: 20px;
+}
+
+.counter h2 {
+    color: #007bff;
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.counter p {
+    color: #555;
+    font-size: 2em;
+    margin: 0;
+}
+
+#department-chart {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .counter {
+        width: 48%; /* Adjust the width for small screens */
+        margin-bottom: 20px;
+    }
+
+    #department-chart {
+        margin: 20px 10px;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .counter {
+        width: 100%; /* Each counter takes full width on very small screens */
+    }
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 10px;
+}
+
+.login {
+    background-color: #28a745; /* Green for login to indicate a positive action */
+}
+
+.logout {
+    background-color: #dc3545; /* Red for logout to indicate a disconnect action */
+}
+
+.auth-button:hover {
+    opacity: 0.8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.auth-button:active {
+    opacity: 0.9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px);
+}

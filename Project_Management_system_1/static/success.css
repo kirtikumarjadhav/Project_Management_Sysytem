@@ -1,0 +1,180 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+th:first-child, td:first-child {
+    border-left: none;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+.status-button, .delete-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.status-button {
+    color: #fff;
+    background-color: #28a745;
+    margin-right: 5px;
+}
+
+.status-button[data-status="close"] {
+    background-color: #ffc107;
+}
+
+.status-button[data-status="cancel"], .delete-button {
+    background-color: #dc3545;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.status-button:hover, .delete-button:hover {
+    opacity: 0.8;
+}
+
+.step-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.step-links a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.step-links a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.current {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .label, .input-text, .select-dropdown, .status-button, .delete-button {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .form-group {
+        flex-direction: column;
+    }
+}
+
+
+.dashboard-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 10px;
+}
+
+.dashboard-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.dashboard-button:active {
+    background-color: #004494;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+
+.auth-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 10px;
+}
+
+.login {
+    background-color: #28a745; /* Green for login to indicate a positive action */
+}
+
+.logout {
+    background-color: #dc3545; /* Red for logout to indicate a disconnect action */
+}
+
+.auth-button:hover {
+    opacity: 0.8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.auth-button:active {
+    opacity: 0.9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px);
+}
